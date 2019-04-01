@@ -18,4 +18,14 @@ def page(request,num):
     #return HttpResponse("获取当前页面home时间标签：%s年/%s月" %(year, month))
 def home1(request, year="2018", month="01"):
     return HttpResponse("获取当前页面home时间标签：%s年/%s月" %(year, month))
+def lan(request):
+    context = {}
+    context['name'] = '蓝水源'
+    return  render(request,'lan.html', context)
+def fenceng(request):
+    context = {"name": "水源"}
+    return render(request, 'fenceng.html', context)
+
+
+
 
