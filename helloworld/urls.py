@@ -12,5 +12,7 @@ urlpatterns = [
     url(r'^archive1/(?P<year>[0-9]{4})/(?P<month>[0-9]{1,2}).html$', views.home1),
     path("lan/", views.lan),
     path("fenceng/", views.fenceng),
+    path("sonblock/", views.sonblock),
+
 ]
 

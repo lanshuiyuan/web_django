@@ -25,6 +25,11 @@ def lan(request):
 def fenceng(request):
     context = {"name": "水源"}
     return render(request, 'fenceng.html', context)
+def sonblock(request):
+    context = {"ads":["appnium","selenium","request"]}
+    return render(request,'sonblock.html', context )
+
+
 
 
 
