@@ -15,6 +15,10 @@ urlpatterns = [
     path("fenceng/", views.fenceng),
     path("sonblock/", views.sonblock),
     url(r'^testdb$', testdb.testdb),
+    url(r'^add_user/$', testdb.add_user),
+    url(r'^get_json/$', testdb.get_json),
+
+
 
 ]
 
